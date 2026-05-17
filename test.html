@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Traject: 次世代時空間ライフログアプリ企画書</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS（integrity & crossorigin付き） -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  <style>
+    body { font-family: 'Segoe UI', 'Yu Gothic', 'YuGothic', 'Meiryo', 'sans-serif'; }
+    h1, h2 { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="mb-4 text-center">Traject: 次世代時空間ライフログアプリ 企画書</h1>
+    <section class="mb-4">
+      <h2 class="h4 border-bottom mb-2 pb-2">1. 概要</h2>
+      <p>
+        <strong>Traject</strong>は、スマートフォンやPCで「自分の移動・訪問履歴」を地図と時系列で記録・分析できるWebアプリです。<br>
+        「いつ」「どこへ行ったか」だけでなく、行動傾向やライフパターンを見やすく可視化。
+        データサイエンス・時空間データベースなど現代ITスキルが身につく開発プロジェクトとしても有用です。
+      </p>
+    </section>
+    <section class="mb-4">
+      <h2 class="h4 border-bottom mb-2 pb-2">2. 主な機能</h2>
+      <ul>
+        <li>位置情報(GPS)の自動／手動記録</li>
+        <li>地図上への経路・訪問ポイント表示（Leaflet.js使用）</li>
+        <li>各地点へのメモ・写真・タグの添付</li>
+        <li>日付・キーワード・場所ごとの履歴検索</li>
+        <li>シンプルな統計・可視化（移動距離・滞在時間グラフ等）</li>
+        <li>データのエクスポート（CSV/GeoJSON）</li>
+      </ul>
+    </section>
+    <section class="mb-4">
+      <h2 class="h4 border-bottom mb-2 pb-2">3. ターゲットユーザー</h2>
+      <ul>
+        <li>自分のライフログや行動分析をしたい学生・社会人</li>
+        <li>営業やフィールドワークの訪問記録を効率化したい人</li>
+        <li>IT/データサイエンスの実験やポートフォリオ・就活実績に活用したい初学者</li>
+      </ul>
+    </section>
+    <section class="mb-4">
+      <h2 class="h4 border-bottom mb-2 pb-2">4. 技術構成</h2>
+      <ul>
+        <li>フロントエンド：HTML, CSS, Bootstrap, JavaScript, Leaflet.js</li>
+        <li>バックエンド：Flask（Python）またはNode.js</li>
+        <li>データベース：PostgreSQL＋PostGIS</li>
+        <li>ホスティング：Render, Google Cloud Run, Vercel等</li>
+        <li>データ可視化：Chart.jsやPython</li>
+      </ul>
+    </section>
+    <section class="mb-4">
+      <h2 class="h4 border-bottom mb-2 pb-2">5. 今後の展開（プロ志向のステップアップへ）</h2>
+      <ul>
+        <li>移動パターンの自動分析・おすすめ提示（AI/ML連携）</li>
+        <li>グループ内共有や匿名公開で「みんなの移動ヒートマップ」実現</li>
+        <li>公共データ・外部API連携によるスポット情報強化</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="h4 border-bottom mb-2 pb-2">6. 差別化ポイント</h2>
+      <ul>
+        <li>時空間DB x データサイエンスで履歴管理＋分析＋可視化を1つで体験</li>
+        <li>プライバシー重視（SNS公開やデータの主権を利用者側へ）</li>
+        <li>大学生からエンジニア志望者まで本格的なポートフォリオ実績として展開可能</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper（JSのCDNを忘れずに！） -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-bmbxuPwQa2lc/FVzBcNJ7UAyJkOx2l6Ck/r/iSvOlZBRF0PqU2V5KkFV0p3igT7on" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
