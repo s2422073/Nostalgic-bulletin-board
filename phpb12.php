@@ -64,7 +64,7 @@ if (isset($_POST['pname']) && !empty($_POST['pname'])) {
             echo "          style=\"border:0\"\n";
             echo "          loading=\"lazy\"\n";
             echo "          allowfullscreen\n";
-            echo "          src=\"https://www.google.com/maps/embed/v1/place?key=AIzaSyDDF34egN-PvidYnPOzxGCr8Sm-DtDpTvw&q=" . urlencode($lat . "," . $lon) . "\">\n";
+            echo "          src=\"マスク" . urlencode($lat . "," . $lon) . "\">\n";
             echo "        </iframe>\n";
             echo "      </td>\n";
             echo "    </tr>\n";
